@@ -1,0 +1,151 @@
+@font-face {
+    font-family: EduQLDBeginner-Regular;
+    src: url(../fonts/static/EduQLDBeginner-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'EduQLDBeginner-Regular';
+    font-size: 16px;
+    background-color: rgb(7, 38, 47);
+
+}
+.contenedor{
+    width: 90%;
+    margin: 20px;
+    max-width: 1000px;
+    overflow: hidden;
+    text-align: justify;
+    margin: 20px auto;
+
+}
+
+
+header{
+    background-color: #fff;
+}
+
+header nav{
+    width: 100%;
+}
+
+header nav ul{
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    color: rgb(7, 38, 47);
+    transition: 0.2s;
+}
+
+header nav ul li a:hover{
+background-color: rgb(8, 30, 96);
+color: white;
+/*transform: rotate(2deg);*/
+box-sizing: border-box;
+}
+
+.main{
+    width: 70%;
+    background-color: white;
+    float: left;
+}
+
+.main .imagen{
+    width: 100%;
+}
+
+
+.main .imagen img{
+    width: 100%;
+    vertical-align: top; /*quitar margen de arriba */
+}
+
+.main .posts{
+    padding: 40px;
+}
+
+.main .posts article h2{
+    margin-bottom: 20px;
+    color: #424242;
+}
+
+.main .posts article p{
+    margin-bottom: 15px;
+    line-height: 27px;
+}
+
+aside{
+    width: 30%;
+    background-color: #161f26 ;
+    padding: 20px;
+    color: white;
+    float: left;
+
+}
+aside .widget{
+    margin-bottom: 20px;
+}
+aside .widget .titulo{
+    color: #199eeb;
+    border-bottom: 1px solid #199eeb;
+    margin-bottom: 10px;
+}
+
+aside .widget ul{
+    list-style: none;
+    transition: 0.2s;
+}
+aside .widget ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.911);
+    padding: 10px 0;
+}
+aside .widget ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+aside .widget ul li a:hover{
+    color: rgb(108, 216, 238);
+}
+aside .widget p{
+    line-height: 27px;
+}
+
+footer{
+    width: 70%;
+    background-color: black;
+    color: white;
+    padding: 15px 0px;
+    text-align: center;
+    clear: both;
+}
+
+
+@media screen and (max-width: 800px){
+body{
+    background-color: black;
+}
+.main{
+    width: 100%;
+}
+
+aside{
+    width:100%;
+}
+footer{
+    width: 100%;
+}
+    
+}
